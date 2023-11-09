@@ -61,11 +61,19 @@
     //배열값을 인수로 받아서 누구님 반갑습니다 라는 콘솔문을 자동반복해주는 함수 생성
     const name = ['홍길동', '김판섭', '박영철'];
 
-    function intro(arr) {
-      arr.forEach(function (data) {
-        console.log(data + '님 반갑습니다');
-      })
-    }
+    name.forEach(function (data, index) {
+      console.log(data + '님 반갑습니다');
+      console.log(index);
+    })
+    //-------------------------------------
+
+    const dd = ['a', 'b', 'c'];
+
+    dd.forEach(function (data, index) {
+      console.log(data + '님 반갑습니다');
+      console.log(index);
+    })
+
 
 
 
